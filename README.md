@@ -17,7 +17,7 @@ Web only Spring MVC CRUD application with MySQL. The API allows users to create 
 
 ##Demo
 
-<img /> 
+![preview](https://github.com/user-attachments/assets/52f10d1e-0705-4b7c-acf0-4bac31eff738)
 
 ## File Structure
 
