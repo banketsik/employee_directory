@@ -1,6 +1,6 @@
 ## About this Project:
 
-Web only Spring MVC CRUD application with MySQL. The API allows users to create accounts, update, and delete accounts reviews.
+Web only Spring MVC CRUD application with MySQL. The API allows users to create accounts, update, and delete accounts.
 
 ## Features
 
