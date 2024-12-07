@@ -15,7 +15,7 @@ Web only Spring MVC CRUD application with MySQL. The API allows users to create 
 [![HTML 5](https://img.shields.io/badge/HTML5-%23E34F26.svg?logo=html5&logoColor=white)](#)
 [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#)
 
-##Demo
+## Demo
 
 ![preview](https://github.com/user-attachments/assets/52f10d1e-0705-4b7c-acf0-4bac31eff738)
 
