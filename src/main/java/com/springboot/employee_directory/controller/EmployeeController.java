@@ -2,6 +2,7 @@ package com.springboot.employee_directory.controller;
 
 import com.springboot.employee_directory.entity.Employee;
 import com.springboot.employee_directory.service.EmployeeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -14,6 +15,7 @@ public class EmployeeController {
 
     private final EmployeeService employeeService;
 
+    @Autowired
     public EmployeeController(EmployeeService theEmployeeService) {
         employeeService = theEmployeeService;
     }
@@ -49,6 +51,8 @@ public class EmployeeController {
         // Return in the root template.
         return "/employees/employee-form";
     }
+
+    // Add mapping for a showFormForUpdate
 
     @GetMapping("/showFormForUpdate")
     public String showFormForUpdate(@RequestParam("employeeId") int id, Model model) {
