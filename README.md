@@ -1,19 +1,25 @@
 ## About this Project:
 
-Web only Spring MVC CRUD application with MySQL. The API allows users to create accounts, update, and delete accounts.
+A robust Spring Boot REST API designed for managing employee records. This project implements a full CRUD (Create, Read, Update, Delete) workflow using Spring Data JPA/Hibernate and MySQL. It follows a standard n-tier architecture to ensure clean separation of concerns.
 
 ## Features
 
-- Apply New Employee
-- Edit An Existing Employee
-- Delete All Employees
+- Register New Employee: Add new staff members to the database.
+- Search & View: Retrieve individual employee details or a complete directory list.
+- Update Records: Modify existing employee information dynamically.
+- Remove Employee: Delete specific employee records from the system
 
 ## Tech Stack
 
-[![JAVA](https://img.shields.io/badge/Java-%23ED8B00.svg?logo=openjdk&logoColor=white)](#)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?logo=springboot&logoColor=fff)](#)
-[![HTML 5](https://img.shields.io/badge/HTML5-%23E34F26.svg?logo=html5&logoColor=white)](#)
-[![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?logo=intellij-idea&logoColor=white)](#)
+**Backend:** [![Java](https://img.shields.io/badge/Java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white)](#) 
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)](#)
+
+**Database:** [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-ffffff?style=flat-square&logo=postgresql&logoColor=336791)](#)
+
+**Build Tool:** [![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-ffffff.svg?style=flat-square&logo=intellij-idea&logoColor=black)](#)
+
+**Frontend:** [![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white)](#)
+
 
 ## Demo
 
@@ -77,26 +83,24 @@ Web only Spring MVC CRUD application with MySQL. The API allows users to create 
    ```sh
    git clone https://github.com/your_username_/Project-Name.git
    ```
-2. Navigate to Project Directory
+2. Initialize the Database (Docker)
+   ```sh
+   docker run --name employee_directory \
+   -e POSTGRES_DB=employeedb \
+   -e POSTGRES_USER=root \
+   -e POSTGRES_PASSWORD=root \
+   -p 3307:5432 \
+   -d postgres
+   ```
+3. Navigate to Project Directory
    ```sh
    cd <project-name>
    ```
-3. Open VS Code from terminal
+4. Open VS Code from terminal
    ```sh
    code .
    ```
-4. Start up Live server
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
-
-1. Fork the Project
-2. Create your Feature Branch ( `git checkout -b feature/AmazingFeature` )
-3. Add your Changes ( `git add .` )
-4. Commit your Changes ( `git commit -m 'Add some AmazingFeature'` )
-5. Push to the Branch ( `git push origin feature/AmazingFeature` )
-6. Open a Pull Request
+5. Start up Live server
 
 ## License
 
